@@ -61,6 +61,7 @@ public class User {
      * 设置
      * @param email
      */
+
     public void setEmail(String email) {
         this.email = email;
     }
