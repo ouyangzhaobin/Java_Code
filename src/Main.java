@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -6,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
         //2.创建对象，其实就是申明一下，我准备开始用Scanner这个类了。
         Scanner scanner = new Scanner(System.in);
-
+//        byte[] bys = {97, 98, 99};
+//        String s3 = new String(bys);
+//        System.out.println("s3:" + s3);
 //        System.out.println("Hello world!");
 //        System.out.println(10);
 //        System.out.println("string");
@@ -67,8 +70,40 @@ public class Main {
 //        int a = 2;
 //        //在main()方法中调用定义好的方法
 //        getMax();
-
-
+//        //构造方法的方式得到对象
+//        char[] chs = {'a', 'b', 'c'};
+//        String s1 = new String(chs);
+//        String s2 = new String(chs);
+//
+//        //直接赋值的方式得到对象
+//        String s3 = "abc";
+//        String s4 = "abc";
+//
+//        //比较字符串对象地址是否相同
+//        System.out.println(s1 == s2);
+//        System.out.println(s1 == s3);
+//        System.out.println(s3 == s4);
+//        System.out.println("--------");
+//
+//        //比较字符串内容是否相同
+//        System.out.println(s1.equals(s2));
+//        System.out.println(s1.equals(s3));
+//        System.out.println(s3.equals(s4));
+//        System.out.println("--------");
+//
+//        s3 = s3 + "d";
+//        System.out.println(s3);
+//        System.out.println(s4);
+//        System.out.println(s3.equals(s4));
+//        ArrayList<String> arrayList = new ArrayList<String>();
+//
+//        arrayList.add("cde");
+//        arrayList.add("cde");
+//        arrayList.add("abc");
+//        indexOf内部执行比较的是一个equal()函数比较
+//        int index = arrayList.indexOf("abc");
+//        System.out.println(index);
+//        System.out.println(arrayList.get(0).getClass().getName());
 
 
     }
@@ -84,4 +119,5 @@ public class Main {
             System.out.println(b);
         }
     }
+
 }
