@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.math.BigDecimal;
+import java.util.*;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -100,11 +99,44 @@ public class Main {
 //        arrayList.add("cde");
 //        arrayList.add("cde");
 //        arrayList.add("abc");
-//        indexOf内部执行比较的是一个equal()函数比较
+////      indexOf内部执行比较的是一个equal()函数比较
 //        int index = arrayList.indexOf("abc");
 //        System.out.println(index);
 //        System.out.println(arrayList.get(0).getClass().getName());
-
+////        为了避免ClassCastException的发生，Java提供了 `instanceof` 关键字，给引用变量做类型的校验，格式如下xxxxxxxxxx3 
+////        1变量名 instanceof 数据类型
+////        2如果变量属于该数据类型或者其子类类型，返回true。
+////        3如果变量不属于该数据类型或者其子类类型，返回false。
+//        double a = Math.abs(-1.1);
+//        System.out.println(Runtime.getRuntime().availableProcessors());
+//        System.out.println(Runtime.getRuntime().maxMemory() / 1024 / 1024);
+//        System.out.println(Runtime.getRuntime().totalMemory() / 1024 / 1024);
+//        System.out.println(Runtime.getRuntime().freeMemory() / 1024 / 1024);
+//        System.out.println(0.09 + 0.01);
+//        // 创建两个BigDecimal对象
+//        BigDecimal b1 = new BigDecimal("0.3") ;
+//        BigDecimal b2 = new BigDecimal("4") ;
+//
+//        // 调用方法进行b1和b2的四则运算，并将其运算结果在控制台进行输出
+//        System.out.println(b1.add(b2));         // 进行加法运算
+//        System.out.println(b1.subtract(b2));    // 进行减法运算
+//        System.out.println(b1.multiply(b2));    // 进行乘法运算
+//        System.out.println(b1.divide(b2));      // 进行除法运算
+//        System.out.println(b1.add(b2).getClass().getName());
+//        String input1 = "A12345";      // 首字符是字母
+//        String input2 = "bs9876543210"; // 首字符是字母
+//        String input3 = "123456";      // 首字符是数字
+//        String input4 = "0";           // 不符合要求
+//        String regex = "[A-Za-z1-9]\\w{5,19}";
+//
+//        Pattern pattern = Pattern.compile(regex);
+//
+//        System.out.println(input1.matches(regex)); // 输出：true
+//        System.out.println(input2.matches(regex)); // 输出：true
+//        System.out.println(input3.matches(regex)); // 输出：true
+//        System.out.println(input4.matches(regex)); // 输出：false
+        System.out.println(new Date());
+        System.out.println(new Date(0L));
 
     }
     public static void getMax(){
