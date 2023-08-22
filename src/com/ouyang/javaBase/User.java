@@ -1,4 +1,4 @@
-package com.ouyang.java;
+package com.ouyang.javaBase;
 
 public class User {
     //属性

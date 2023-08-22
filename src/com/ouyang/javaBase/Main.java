@@ -1,9 +1,10 @@
-package com.ouyang.java;
+package com.ouyang.javaBase;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         //2.创建对象，其实就是申明一下，我准备开始用Scanner这个类了。
         Scanner scanner = new Scanner(System.in);
 //        byte[] bys = {97, 98, 99};
@@ -176,7 +177,80 @@ public class Main {
 //            System.out.println("Inside finally block");
 //        }
 //
-        System.out.println("After try-catch-finally");
+//        System.out.println("After try-catch-finally");
+//        MyThread my1 = new MyThread();
+//        MyThread my2 = new MyThread();
+//
+////        my1.run();
+////        my2.run();
+//
+//        //void start() 导致此线程开始执行; Java虚拟机调用此线程的run方法
+//        my1.start();
+//        my2.start();
+//        Thread thread1 = new Thread(() -> {
+//            for (int i = 0; i < 5; i++) {
+//                System.out.println("Thread 1 - Iteration: " + i);
+//            }
+//        });
+//
+//        Thread thread2 = new Thread(() -> {
+//            for (int i = 0; i < 5; i++) {
+//                System.out.println("Thread 2 - Iteration: " + i);
+//            }
+//        });
+//
+//        // 设置线程优先级
+//        thread1.setPriority(Thread.MIN_PRIORITY); // 设置最低优先级
+//        thread2.setPriority(Thread.MAX_PRIORITY); // 设置最高优先级
+//
+//        thread1.start();
+//        thread2.start();
+//        Thread daemonThread = new Thread(() -> {
+//            while (true) {
+//                System.out.println("守护线程执行中");
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
+//
+//        // 将线程设置为守护线程
+//        daemonThread.setDaemon(true);
+//        System.out.println("主线程开始");
+//
+//        // 启动线程
+//        daemonThread.start();
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        // 主线程结束
+//        System.out.println("主线程结束");
+
+//        InetAddress address = InetAddress.getByName("localhost");
+//
+//        //public String getHostName()：获取此IP地址的主机名
+//        String name = address.getHostName();
+//        //public String getHostAddress()：返回文本显示中的IP地址字符串
+//        String ip = address.getHostAddress();
+//
+//        System.out.println("主机名：" + name);
+//        System.out.println("IP地址：" + ip);
+////1.获取整体的字节码文件对象
+//        Class clazz = Class.forName("com.ouyang.java.Student");
+////2.获取空参的构造方法
+//        Constructor con = clazz.getConstructor();
+////3.利用空参构造方法创建对象
+//        Student stu = (Student) con.newInstance();
+//        System.out.println(stu);
+//
+//
+//        System.out.println("=============================================");
+
+
 
 
 
@@ -206,4 +280,23 @@ public class Main {
         return element;
     }
 
+
 }
+
+// class MyThread extends Thread {
+//    @Override
+//    public void run() {
+//        for(int i=0; i<5; i++) {
+//            try {
+////                System.out.println("开始休眠");
+//                System.out.println(i);
+//                Thread.sleep(1000); // 休眠一秒钟 (1000 毫秒)
+////                System.out.println("休眠结束");
+//            } catch (InterruptedException e) {
+//                // 处理异常，这里可以打印异常信息或采取其他处理措施
+//                e.printStackTrace();
+//            }
+//
+//        }
+//    }
+//}
