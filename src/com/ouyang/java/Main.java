@@ -1,8 +1,6 @@
-package com.outyang.java;
+package com.ouyang.java;
 
-import java.math.BigDecimal;
 import java.util.*;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {

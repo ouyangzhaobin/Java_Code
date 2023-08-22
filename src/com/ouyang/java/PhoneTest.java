@@ -1,4 +1,4 @@
-package com.outyang.java;
+package com.ouyang.java;
 
 public class PhoneTest {
     public static void main(String[] args) {
