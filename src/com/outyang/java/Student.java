@@ -1,3 +1,5 @@
+package com.outyang.java;
+
 public class Student {
     private String name;
     private int age;
@@ -5,7 +7,7 @@ public class Student {
 
     //如果我们自己没有写任何的构造方法
     //那么虚拟机给我们加一个空参构造方法
- /*   public Student(){
+ /*   public com.outyang.java.Student(){
         System.out.println("看看我执行了吗？");
     }*/
 

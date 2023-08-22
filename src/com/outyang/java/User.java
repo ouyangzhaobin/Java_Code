@@ -1,3 +1,5 @@
+package com.outyang.java;
+
 public class User {
     //属性
     private String username;

@@ -1,3 +1,5 @@
+package com.outyang.java;
+
 public class Phone {
 
     //属性

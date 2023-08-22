@@ -1,3 +1,5 @@
+package com.outyang.java;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.regex.Pattern;
@@ -135,8 +137,50 @@ public class Main {
 //        System.out.println(input2.matches(regex)); // 输出：true
 //        System.out.println(input3.matches(regex)); // 输出：true
 //        System.out.println(input4.matches(regex)); // 输出：false
-        System.out.println(new Date());
-        System.out.println(new Date(0L));
+//        System.out.println(new Date());
+//        System.out.println(new Date(0L));
+//        //创建集合对象
+//        Map<String,String> map = new HashMap<String,String>();
+//
+//        //V put(K key,V value)：添加元素
+//        map.put("张无忌","赵敏");
+//        map.put("郭靖","黄蓉");
+//        map.put("杨过","小龙女");
+//        //int size()：集合的长度，也就是集合中键值对的个数
+//        System.out.println(map.size());
+//
+//        //输出集合对象
+//        System.out.println(map);
+//        // 获取所有键的集合。用keySet()方法实现
+//        Set<String> keySet = map.keySet();
+//        //遍历键的集合，获取到每一个键。用增强for实现
+//        for (String key : keySet) {
+//            //根据键去找值。用get(Object key)方法实现
+//            String value = map.get(key);
+//            System.out.println(key + "," + value);
+//        }
+//        //创建一个数组
+//        int[] arr = {2,4,52,2};
+//        //根据索引找对应的元素
+//        int index = 4;
+//        int element = getElement(arr, index);
+//
+//        System.out.println(element);
+//        System.out.println("over");
+//        try {
+//            System.out.println("Inside try block1");
+////            int c1 = 10 / 2;
+//            int c2 = 10 / 0;
+//            System.out.println("Inside try block2");
+//        } catch (Exception e) {
+//            System.out.println("Inside catch block");
+//        } finally {
+//            System.out.println("Inside finally block");
+//        }
+//
+        System.out.println("After try-catch-finally");
+
+
 
     }
     public static void getMax(){
@@ -150,6 +194,18 @@ public class Main {
         } else {
             System.out.println(b);
         }
+    }
+    public static int getElement(int[] arr,int index){
+        //判断  索引是否越界
+        if(index<0 || index>arr.length-1){
+             /*
+             判断条件如果满足，当执行完throw抛出异常对象后，方法已经无法继续运算。
+             这时就会结束当前方法的执行，并将异常告知给调用者。这时就需要通过异常来解决。
+              */
+            throw new ArrayIndexOutOfBoundsException("哥们，角标越界了```");
+        }
+        int element = arr[index];
+        return element;
     }
 
 }

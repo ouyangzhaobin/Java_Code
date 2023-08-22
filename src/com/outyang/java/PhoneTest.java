@@ -1,3 +1,5 @@
+package com.outyang.java;
+
 public class PhoneTest {
     public static void main(String[] args) {
         //创建手机的对象
