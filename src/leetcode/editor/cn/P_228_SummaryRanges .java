@@ -56,7 +56,7 @@ import java.util.List;
 
 /**
  * 汇总区间
- * @author DY
+ * @author ouyang
  * @date 2023-08-26 00:48:39
  */
 class P_228_SummaryRanges{
