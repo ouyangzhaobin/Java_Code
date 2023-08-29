@@ -63,7 +63,7 @@ import java.util.*;
 class P_380_InsertDeleteGetrandomO1{
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new P_380_InsertDeleteGetrandomO1().new Solution();
+
 	 }
 	 
 //力扣代码
