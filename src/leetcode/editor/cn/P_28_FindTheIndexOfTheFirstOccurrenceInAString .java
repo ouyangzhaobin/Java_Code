@@ -45,15 +45,18 @@ class P_28_FindTheIndexOfTheFirstOccurrenceInAString{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P_28_FindTheIndexOfTheFirstOccurrenceInAString().new Solution();
+		String haystack = "sadbutsad";
+		String needle = "sad";
+		 System.out.println(solution.strStr(haystack, needle));
 	 }
 	 
 //力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int strStr(String haystack, String needle) {
-		int len1 = needle.length(), len2 = needle.length();
+		int len1 = haystack.length(), len2 = needle.length();
 		char[] haystackArray = haystack.toCharArray(), needleArray = needle.toCharArray();
-		for (int i = 0; i < len1-len2; i++) {
+		for (int i = 0; i <= len1-len2; i++) {
 			int a = i,b=0;
 			while(b < len2 && haystackArray[a] == needleArray[b]){
 				a++;
