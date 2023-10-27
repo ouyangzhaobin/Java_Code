@@ -251,8 +251,15 @@ public class Main {
 //        System.out.println("=============================================");
         System.out.println("test");
         System.out.println(Math.log(5));
-
-
+        ArrayList arrayList = new ArrayList(1);
+        arrayList.add(1);
+        System.out.println(arrayList.size());
+        arrayList.add(2);
+        System.out.println(arrayList);
+        // System.out.println(arrayList.size());
+        // ArrayList arrayList = new ArrayList();
+        // System.out.println(arrayList.size());
+        System.out.println("q".equals("q"));
 
 
     }
